@@ -1,0 +1,42 @@
+{
+  "message": "accurate",
+  "list": [
+    {
+      "id": 1566083,
+      "name": "Thanh pho Ho Chi Minh",
+      "coord": {
+        "lat": 10.75,
+        "lon": 106.6667
+      },
+      "main": {
+        "temp": 30.01,
+        "feels_like":36.07,
+        "temp_min":30.01,
+        "temp_max":30.01,
+        "pressure":1004,
+        "humidity":74
+      },
+      "dt": 1626152956,
+      "wind": {
+        "speed": 1.03,
+        "deg": 0
+      },
+      "sys": {
+        "country": "VN"
+      },
+      "rain": "",
+      "snow": "",
+      "clouds": {
+        "all": 75
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04d"
+        }
+      ]
+    }
+  ]
+}

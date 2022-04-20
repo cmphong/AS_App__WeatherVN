@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:id="@+id/linear_item_country">
+
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:src="@drawable/img_flag_vietnam"
+        />
+    <TextView
+        android:id="@+id/tv_countryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bình Trị Đông, Bình Tân, Tp.HCM"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        />
+
+</LinearLayout>

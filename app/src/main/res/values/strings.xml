@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">WeatherVN</string>
+
+
+    <string-array name="wind">
+        <item name="75">Gentle breeze</item>
+    </string-array>
+
+    <string-array name="clouds">
+        <item name="">Scattered clouds</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="APIKey_openweather">b3f8004d9298c36efddfc284abcbb0fe</string>
+    <string name="APIKey_locationiq">pk.a7f6d53a0778ee85477ce7f9c3e2b046</string>
+
+    <string name="API_description">
+        All the data for OpenWeather App is provided by One Call API™. OpenWeather aggregates and processes meteorological data from tens of thousands of weather stations, on-ground radars and satellites to bring you accurate and actionable weather data for any location worldwide.
+    </string>
+
+    <!--
+        Refer at:
+        https://developer.android.com/reference/android/widget/TextView#attr_android:imeOptions
+    -->
+    <integer name="actionSearch">3</integer>
+
+    <!-- FEEDBACK -->
+    <string name="sender_feedback_email">feedback.appweather@gmail.com</string>
+    <string name="sender_feedback_password">####1234</string>
+    <string name="receiver_feedback_email">minhphong1515@gmail.com</string>
+
+</resources>

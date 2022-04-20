@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <!--  ROW SEARCH  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_view_search"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingVertical="3dp"
+            android:layout_toStartOf="@id/ic_tune">
+            <ImageView
+                android:id="@+id/ic_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:padding="5dp"
+                android:src="@drawable/ic_white_search"/>
+            <EditText
+                android:id="@+id/dt_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ic_search"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:hint="Search"
+                android:textColorHint="@color/grey_600"/>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/ic_tune"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_white_cancel"
+            android:layout_alignParentRight="true"
+            android:background="@null"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"/>
+
+    <!--  ROW SUGGEST  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        >
+        <ImageView
+            android:id="@+id/ic_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_white_location_on"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bình Trị Đông Ward,"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/ic_location"
+            android:layout_toStartOf="@id/tv_temp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25°C"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/ic_cloud"/>
+        <ImageView
+            android:id="@+id/ic_cloud"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_overcast_clouds"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+
+</LinearLayout>
+

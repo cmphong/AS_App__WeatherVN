@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingVertical="3dp"
+    android:paddingHorizontal="7dp"
+    android:gravity="center"
+    android:layout_marginRight="5dp"
+    android:id="@+id/wrapper">
+<!--    android:background="@drawable/card_date">-->
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sat"
+        android:textSize="10sp"
+        android:textColor="@color/grey_500"/>
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23"
+        android:textSize="14sp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data source:"
+        android:textColor="@color/white"
+        />
+
+    <CheckBox
+        android:id="@+id/feedback_cb_1"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:text="Personal feeling"
+        android:textColor="@color/white"
+        android:paddingVertical="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/feedback_cb_2"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:text="Own weather station or devices"
+        android:textColor="@color/white"
+        android:paddingVertical="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+    <CheckBox
+        android:id="@+id/feedback_cb_3"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:text="Local weather provider"
+        android:textColor="@color/white"
+        android:paddingVertical="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+    <CheckBox
+        android:id="@+id/feedback_cb_4"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:text="Global weather provider"
+        android:textColor="@color/white"
+        android:paddingVertical="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+    <CheckBox
+        android:id="@+id/feedback_cb_5"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:text="Other"
+        android:textColor="@color/white"
+        android:paddingVertical="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/feedback_btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/bg_btn_send"
+        android:text="Send"
+        android:textColor="@color/cyan"/>
+</LinearLayout>

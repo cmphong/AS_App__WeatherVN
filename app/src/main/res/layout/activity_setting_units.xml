@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:orientation="vertical"
+    tools:context=".SettingActivity.UnitsSettingActivity">
+
+    <!--  HEADER  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/units_ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@null"
+            android:src="@drawable/ic_white_arrow_left" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Units"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <!--  CONTENT  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="10dp">
+
+        <!--  ROW 1  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_btn_units_group">
+                <View
+                    android:id="@+id/view_anim_temp"
+                    android:layout_width="105dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_btn_units"
+                    android:layout_alignStart="@id/linearlayout_temp"/>
+                <LinearLayout
+                    android:id="@+id/linearlayout_temp"
+                    android:layout_width="210dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="4dp">
+                    <TextView
+                        android:id="@+id/tv_tempC"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="ºC"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_tempF"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="ºF"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginVertical="10dp"/>
+
+        <!--  ROW 2  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wind speed"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_btn_units_group"
+                >
+
+                <View
+                    android:id="@+id/view_anim_windspeed"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/bg_btn_units"
+                    android:layout_alignStart="@+id/linerlayout_wind_speed"
+                    android:layout_centerVertical="true"/>
+
+                <LinearLayout
+                    android:id="@+id/linerlayout_wind_speed"
+                    android:layout_width="210dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_margin="4dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_ms"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="m/s"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_kmh"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="km/h"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_mph"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="mph"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginVertical="10dp"/>
+
+        <!--  ROW 3  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pressure"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_btn_units_group">
+                <View
+                    android:id="@+id/view_anim_pressure"
+                    android:layout_width="105dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_btn_units"
+                    android:layout_alignStart="@id/linearlayout_pressure"/>
+                <LinearLayout
+                    android:id="@+id/linearlayout_pressure"
+                    android:layout_width="210dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="4dp">
+                    <TextView
+                        android:id="@+id/tv_hPa"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="hPa"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_inHg"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="inHg"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginVertical="10dp"/>
+
+        <!--  ROW 4  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precipitation"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_btn_units_group">
+                <View
+                    android:id="@+id/view_anim_precipitation"
+                    android:layout_width="105dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_btn_units"
+                    android:layout_alignStart="@id/linearlayout_precipitation"/>
+                <LinearLayout
+                    android:id="@+id/linearlayout_precipitation"
+                    android:layout_width="210dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="4dp">
+                    <TextView
+                        android:id="@+id/tv_mm"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="mm"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_inch"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="inch"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginVertical="10dp"/>
+
+        <!--  ROW 5  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_btn_units_group">
+                <View
+                    android:id="@+id/view_anim_distance"
+                    android:layout_width="105dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_btn_units"
+                    android:layout_alignStart="@id/linearlayout_distance"/>
+                <LinearLayout
+                    android:id="@+id/linearlayout_distance"
+                    android:layout_width="210dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="4dp">
+                    <TextView
+                        android:id="@+id/tv_km"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="km"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_mile"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="mile"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginVertical="10dp"/>
+
+        <!--  ROW 6  -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time format"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_btn_units_group">
+                <View
+                    android:id="@+id/view_anim_time"
+                    android:layout_width="105dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_btn_units"
+                    android:layout_alignStart="@id/linearlayout_time_format"/>
+                <LinearLayout
+                    android:id="@+id/linearlayout_time_format"
+                    android:layout_width="210dp"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_margin="4dp">
+                    <TextView
+                        android:id="@+id/tv_24h"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="24-hour"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/tv_12h"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="12-hour"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginVertical="10dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
